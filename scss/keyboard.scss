@@ -4,7 +4,7 @@
 
 .mj-kb-layout {
   width: 100%;
-  background-color: darkgreen;
+  background-color: darkgray;
 }
 
 .mj-kb-table {
@@ -13,24 +13,35 @@
 }
 
 .mj-kb-table td {
-
+  background-color: #fff;
+  border-radius: 3px;
 }
 
 .mj-kb-table a {
-  font-family: Arial sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 2em;
   display: block;
   padding: 5px 2px;
-  background-color: #fff;
   color: #000;
   text-align: center;
-  border-radius: 3px;
 
   text-decoration: none;
   cursor: pointer;
 }
 
-.mj-kb-table a:hover {
+.mj-kb-table td.mj-kb-undo {
+  background-color: #fff2c5;
+}
+
+.mj-kb-table td.mj-kb-undo a, .mj-kb-table td.mj-kb-clear a {
+  font-size: 1em;
+}
+
+.mj-kb-table td.mj-kb-clear {
+  background-color: #ffb2b2;
+}
+
+.mj-kb-table td:hover {
   background-color: #616161;
   color: #fff;
   text-decoration: none;

@@ -2,6 +2,8 @@ const suits = [
     'm', 'p', 's', 'z'
 ];
 
+let states = [];
+
 window.addEventListener('DOMContentLoaded', () => {
     const keyboards = document.querySelectorAll('.mj-keyboard');
 
@@ -55,8 +57,8 @@ window.addEventListener('DOMContentLoaded', () => {
                     <td><a class="mj-kb-tile" data-tile="5z">&#126982;</a></td>
                     <td><a class="mj-kb-tile" data-tile="6z">&#126981;</a></td>
                     <td><a class="mj-kb-tile" data-tile="7z">&#126980;</a></td>
-                    <td><a class="mj-kb-backspace">D</a></td>
-                    <td><a class="mj-kb-clear">X</a></td>
+                    <td class="mj-kb-undo"><a>Undo</a></td>
+                    <td class="mj-kb-clear"><a>Clear</a></td>
                 </tr>
             </tbody>
         </table>
@@ -81,13 +83,24 @@ window.addEventListener('DOMContentLoaded', () => {
                 let ho = splitHand(kb.value);
                 // ho = addToHandObject(ho, e.target.getAttribute('data-tile'));
                 kb.value = joinHand(ho) + e.target.getAttribute('data-tile');
+                states.push(kb.value);
             });
+        });
+
+        const clear = layout.querySelector('.mj-kb-clear a');
+        clear.addEventListener('click', (e) => {
+            kb.value = '';
+        });
+
+        const undo = layout.querySelector('.mj-kb-undo a');
+        undo.addEventListener('click', (e) => {
+            states.pop();
+            kb.value = states.slice(-1);
         });
     });
 });
 
 function splitHand(hand) {
-    console.log(hand);
     const max = hand.length - 1;
     let currentSuit = null;
     let handObject = [];
@@ -111,7 +124,6 @@ function splitHand(hand) {
         }
     });
 
-    console.log(handObject);
     return handObject;
 }
 
@@ -145,8 +157,6 @@ function addToHandObject(handObject, tile) {
             ];
         }
     }
-
-    console.log(handObject);
 
     return handObject;
 }
