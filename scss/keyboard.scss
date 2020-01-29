@@ -1,0 +1,41 @@
+.mj-keyboard {
+
+}
+
+.mj-kb-layout {
+  width: 100%;
+  background-color: darkgreen;
+}
+
+.mj-kb-table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.mj-kb-table td {
+
+}
+
+.mj-kb-table a {
+  font-family: Arial sans-serif;
+  font-size: 2em;
+  display: block;
+  padding: 5px 2px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  border-radius: 3px;
+
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mj-kb-table a:hover {
+  background-color: #616161;
+  color: #fff;
+  text-decoration: none;
+}
+
+.mj-kb-hide {
+  display: none;
+}
