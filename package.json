@@ -1,11 +1,19 @@
 {
   "name": "mahjong-keyboard",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A virtual keyboard for writing mahjong notation.",
   "homepage": "https://github.com/harphield/mahjong-keyboard#readme",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/harphield/mahjong-keyboard"
+  },
   "private": true,
-  "main": "src/keyboard.js",
+  "browser": "src/keyboard.js",
   "sass": "scss/keyboard.scss",
+  "files": [
+    "src/keyboard.js",
+    "scss/keyboard.scss"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

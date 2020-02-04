@@ -16,6 +16,10 @@ Check out the [Demo](https://harphield.github.io/mahjong-keyboard/).
 - create mandatory elements
     - input for the notation (usually a input text field)
     - opener/closer button
+- import keyboard's SCSS to your own SCSS file
+```scss
+@import "~mahjong-keyboard";
+``` 
 - import into JS and initialize
 ```javascript
 import MahjongKeyboard from 'mahjong-keyboard';
