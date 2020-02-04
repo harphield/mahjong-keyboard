@@ -1,16 +1,17 @@
 {
   "name": "mahjong-keyboard",
   "version": "0.0.1",
-  "description": "",
+  "description": "A virtual keyboard for writing mahjong notation.",
+  "homepage": "https://github.com/harphield/mahjong-keyboard#readme",
   "private": true,
   "main": "src/keyboard.js",
   "sass": "scss/keyboard.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["mahjong", "riichi", "tiles"],
+  "author": "harphield",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.8.3",
     "babel-loader": "^8.0.6",
