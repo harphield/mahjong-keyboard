@@ -7,7 +7,7 @@ module.exports = {
         'mj-keyboard-styles': './scss/keyboard.scss'
     },
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'docs/dist/'),
         filename: '[name].js',
     },
     module: {
