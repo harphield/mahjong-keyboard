@@ -1,5 +1,7 @@
 # Mahjong Keyboard
 
+[![npm version](https://badge.fury.io/js/mahjong-keyboard.svg)](https://badge.fury.io/js/mahjong-keyboard)
+
 Virtual keyboard that outputs mahjong notation.
 
 Manzu = 1-9m\
