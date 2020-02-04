@@ -1,6 +1,6 @@
 .mj-kb-layout {
   width: 100%;
-  background-color: darkgray;
+  background-color: #343a40;
   margin-top: 1rem;
 }
 
@@ -22,8 +22,8 @@
   display: block;
   width: 100%;
   font-family: Arial, sans-serif;
-  font-size: 2em;
-  padding: 5px 2px;
+  font-size: 2rem;
+  padding: 5px 0 5px 0;
   color: #000;
   text-align: center;
 
@@ -32,7 +32,7 @@
 }
 
 .mj-kb-table a img {
-  width: 2rem;
+  width: 3rem;
 }
 
 .mj-kb-table td.mj-kb-undo {
@@ -40,7 +40,7 @@
 }
 
 .mj-kb-table td.mj-kb-undo a, .mj-kb-table td.mj-kb-clear a {
-  font-size: 1em;
+  font-size: 2rem;
 }
 
 .mj-kb-table td.mj-kb-clear {
@@ -48,7 +48,7 @@
 }
 
 .mj-kb-table td:hover {
-  background-color: #616161;
+  background-color: #343a40;
 }
 
 .mj-kb-table td:hover a {
@@ -58,4 +58,14 @@
 
 .mj-kb-hide {
   display: none;
+}
+
+@media (max-width: 767.98px) {
+  .mj-kb-table a img {
+    width: 2rem;
+  }
+
+  .mj-kb-table a {
+    font-size: 2rem;
+  }
 }

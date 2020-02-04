@@ -128,7 +128,7 @@ export default class MahjongKeyboard {
                 <td><a class="mj-kb-tile" data-tile="6z">${this.tiles['6z']}</a></td>
                 <td><a class="mj-kb-tile" data-tile="7z">${this.tiles['7z']}</a></td>
                 <td class="mj-kb-undo"><a>&#8630;</a></td>
-                <td class="mj-kb-clear"><a>&#128473;</a></td>
+                <td class="mj-kb-clear"><a>&#10799;</a></td>
             </tr>
         </tbody>
         </table>

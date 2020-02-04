@@ -3,7 +3,7 @@ var MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     entry: {
-        'mj-keyboard': './src/keyboard.js',
+        'demo': './src/demo.js',
         'mj-keyboard-styles': './scss/keyboard.scss'
     },
     output: {
