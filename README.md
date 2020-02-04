@@ -8,7 +8,7 @@ Souzu = 1-9s\
 Winds = 1-4z\
 Dragons = 5-7z
 
-Check out the demo.
+Check out the [Demo](https://harphield.github.io/mahjong-keyboard/).
 
 ## How to use
 
