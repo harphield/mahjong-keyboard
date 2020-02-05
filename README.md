@@ -16,7 +16,7 @@ Check out the [Demo](https://harphield.github.io/mahjong-keyboard/).
 
 - add to your project via npm (TODO)
 - create mandatory elements
-    - input for the notation (usually a input text field)
+    - input for the notation (usually an input text field)
     - opener/closer button
 - import keyboard's SCSS to your own SCSS file
 ```scss
@@ -30,8 +30,9 @@ const keyboard = new MahjongKeyboard({});
 keyboard.init();
 ```
 - default parameters that can be changed in the constructor
-    - *keyboard*: selector for the input, where the notation is written. Default **.mj-keyboard**
+    - *keyboard*: selector for the input, where the notation is written (default **.mj-keyboard**)
     - *opener*: selector of the element you want to open and close the keyboard (default **.mj-kb-opener**)
+    - *type*: after or fixed (default **after**). After will place the keyboard after placeAfter, fixed will put it on the bottom like a mobile keyboard.
     - *placeAfter*: selector of an element that you want to place the keyboard after (default **.mj-keyboard**)
     - *tiles*: you can customize each tile's representation. Defaults are UTF-8 mahjong tile glyphs. Format looks like this:
     ```javascript

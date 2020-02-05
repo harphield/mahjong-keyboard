@@ -1,6 +1,6 @@
 {
   "name": "mahjong-keyboard",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "A virtual keyboard for writing mahjong notation.",
   "homepage": "https://github.com/harphield/mahjong-keyboard#readme",
   "repository": {

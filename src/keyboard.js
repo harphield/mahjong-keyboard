@@ -4,6 +4,7 @@ export default class MahjongKeyboard {
     constructor({
         keyboard = '.mj-keyboard',
         opener = '.mj-kb-open',
+        type = 'after',
         placeAfter = '.mj-keyboard',
         tiles = {
             '1m': '&#126983;',
@@ -47,6 +48,7 @@ export default class MahjongKeyboard {
     }) {
         this.keyboard = keyboard;
         this.opener = opener;
+        this.type = type;
         this.placeAfter = placeAfter;
         this.tiles = tiles;
 
@@ -82,6 +84,10 @@ export default class MahjongKeyboard {
         let layout = document.createElement('div');
         layout.classList.add('mj-kb-layout');
         layout.classList.add('mj-kb-hide');
+
+        if (this.type === 'fixed') {
+            layout.classList.add('mj-kb-layout-fixed');
+        }
 
         const html = `
         <table class="mj-kb-table">
@@ -136,7 +142,12 @@ export default class MahjongKeyboard {
 
         layout.innerHTML = html;
 
-        place.insertAdjacentElement('afterend', layout);
+        if (this.type === 'fixed') {
+            const body = document.querySelector('body');
+            body.appendChild(layout);
+        } else {
+            place.insertAdjacentElement('afterend', layout);
+        }
 
         openButton.addEventListener('click', (e) => {
             e.preventDefault();
@@ -144,6 +155,8 @@ export default class MahjongKeyboard {
             const open = document.querySelector('.mj-kb-layout');
             if (open.classList.contains('mj-kb-hide')) {
                 open.classList.remove('mj-kb-hide');
+                const body = document.querySelector('body');
+                body.style.paddingBottom = open.clientHeight + 'px';
             } else {
                 open.classList.add('mj-kb-hide');
             }
