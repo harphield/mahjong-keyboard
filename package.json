@@ -4,8 +4,8 @@
   "description": "A virtual keyboard for writing mahjong notation.",
   "homepage": "https://github.com/harphield/mahjong-keyboard#readme",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/harphield/mahjong-keyboard"
+    "type": "git",
+    "url": "https://github.com/harphield/mahjong-keyboard"
   },
   "browser": "src/keyboard.js",
   "sass": "scss/keyboard.scss",
@@ -16,7 +16,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["mahjong", "riichi", "tiles"],
+  "keywords": [
+    "mahjong",
+    "riichi",
+    "tiles"
+  ],
   "author": "harphield",
   "license": "MIT",
   "devDependencies": {
